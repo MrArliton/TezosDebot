@@ -1,0 +1,5 @@
+everdev sol compile 
+tonos-cli genaddr TylersDebot.tvc TylersDebot.abi.json --genkey TylersDebot.keys.json > log.log
+tonos-cli --url https://net.ton.dev deploy TylersDebot.tvc "{}" --sign TylersDebot.keys.json --abi TylersDebot.abi.json
+tonos-cli --url https://net.ton.dev call adress setABI "{\"dabi\":\"$DEBOT_ABI\"}" --sign TylersDebot.keys.json --abi TylersDebot.abi.json
+cat TylersDebot.abi.json | xxd -ps -c 20000
