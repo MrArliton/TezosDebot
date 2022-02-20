@@ -56,10 +56,14 @@ contract AuthDebot is Debot {
         retHeaders;
         content;
         //
+        bytes balance = new bytes(bytes(content).length-2);
+        for(uint i = 1;i<bytes(content).length-1;i++){
+            balance[i] = bytes(content)[i];
+        }
         if (statusCode == 200) {
-            Terminal.print(0,"Balance:"+string(balance));
+            Terminal.print(0,"Balance:"+string(balance)+"microtez");
         } else {
-            Terminal.print(0,'Authentication FAILED.');
+            Terminal.print(0,"Error :( We can\'t get balance.");
         }
     }
     function menuTransaction(uint32 index) public{
