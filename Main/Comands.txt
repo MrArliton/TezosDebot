@@ -3,3 +3,6 @@ tonos-cli genaddr TylersDebot.tvc TylersDebot.abi.json --genkey TylersDebot.keys
 tonos-cli --url https://net.ton.dev deploy TylersDebot.tvc "{}" --sign TylersDebot.keys.json --abi TylersDebot.abi.json
 tonos-cli --url https://net.ton.dev call adress setABI "{\"dabi\":\"$DEBOT_ABI\"}" --sign TylersDebot.keys.json --abi TylersDebot.abi.json
 cat TylersDebot.abi.json | xxd -ps -c 20000
+tonos-cli --url https://net.ton.devcall 0:c0ec7e7d85d8f81828819277fa264c6360945a163b86efbf1e5b3c701040087a setIcon "{\"icon\":\"$ICON\"}" --sign TylersDebot.keys.json --abi TylersDebot.abi.json
+ICON_BYTES=$(base64 -w 0 image.png)
+ICON=$(echo -n "data:image/png;base64,$ICON_BYTES" | xxd -ps -c 20000)

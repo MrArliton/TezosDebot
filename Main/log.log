@@ -6,12 +6,12 @@ Input arguments:
 init_data: None
 is_update_tvc: None
 
-Seed phrase: "filter know keep fish service aspect rich creek addict cherry chest second"
-Raw address: 0:f621ad6f42c5f3bfe4eb207c5ca28f8cf5a0c46d5303e9ecfde71ed1cc7c1a98
+Seed phrase: "funny toddler shuffle culture weapon announce spatial quit candy pluck insane code"
+Raw address: 0:c0ec7e7d85d8f81828819277fa264c6360945a163b86efbf1e5b3c701040087a
 testnet:
-Non-bounceable address (for init): 0QD2Ia1vQsXzv-TrIHxcoo-M9aDEbVMD6ez95x7RzHwamAgU
-Bounceable address (for later access): kQD2Ia1vQsXzv-TrIHxcoo-M9aDEbVMD6ez95x7RzHwamFXR
+Non-bounceable address (for init): 0QDA7H59hdj4GCiBknf6JkxjYJRaFjuG778eWzxwEEAIesqy
+Bounceable address (for later access): kQDA7H59hdj4GCiBknf6JkxjYJRaFjuG778eWzxwEEAIepd3
 mainnet:
-Non-bounceable address (for init): UQD2Ia1vQsXzv-TrIHxcoo-M9aDEbVMD6ez95x7RzHwamLOe
-Bounceable address (for later access): EQD2Ia1vQsXzv-TrIHxcoo-M9aDEbVMD6ez95x7RzHwamO5b
+Non-bounceable address (for init): UQDA7H59hdj4GCiBknf6JkxjYJRaFjuG778eWzxwEEAIenE4
+Bounceable address (for later access): EQDA7H59hdj4GCiBknf6JkxjYJRaFjuG778eWzxwEEAIeiz9
 Succeeded

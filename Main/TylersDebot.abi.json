@@ -71,8 +71,48 @@
 			]
 		},
 		{
-			"name": "set_N",
+			"name": "setS_Hash",
 			"inputs": [
+				{"name":"value","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setP_Key",
+			"inputs": [
+				{"name":"value","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setD_Hash",
+			"inputs": [
+				{"name":"value","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setW_Hash",
+			"inputs": [
+				{"name":"value","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "set_Net",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "set_Node",
+			"inputs": [
+				{"name":"index","type":"uint32"}
 			],
 			"outputs": [
 			]
@@ -116,7 +156,12 @@
 		{"name":"m_debotAbi","type":"optional(string)"},
 		{"name":"m_targetAbi","type":"optional(string)"},
 		{"name":"m_target","type":"optional(address)"},
-		{"name":"node","type":"string"},
-		{"name":"m_icon","type":"bytes"}
+		{"name":"nodes","type":"string[]"},
+		{"name":"idNode","type":"uint32"},
+		{"name":"m_icon","type":"bytes"},
+		{"name":"s_hash_wallet","type":"string"},
+		{"name":"d_hash_wallet","type":"string"},
+		{"name":"private_key","type":"string"},
+		{"name":"value_t","type":"string"}
 	]
 }
